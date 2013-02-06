@@ -1,18 +1,32 @@
 <?php
-/* Source by Sam Snelling (@snellingmobile) and licensed under the MIT License. All photo's and copyrights belong to their respective companys. */
-/* CHANGE THESE VALUES */
-$developerID = 'samsnelling1234567890'; // Your Appfog developer ID
-$googleAnalytics = "UA-38166115-1"; // If you want to track the website via Google Analytics!
-/* NO MORE CHANING! */
+  /* 
+    Source by Sam Snelling (@snellingmobile) and licensed under the MIT License.
+    All photo's and copyrights belong to their respective companys. 
+    Change the values below.
+  */
+
+  $developerID = 'samsnelling1234567890'; // Your Appfog developer ID
+  $googleAnalytics = "UA-38166115-1"; // If you want to track the website via Google Analytics!
+
 ?>
 
 
 <?php
+
+function randomString($length = 15) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $randomString;
+}
+
   $submitted = false;
   if(isset($_GET['beer'])){
     $beer = $_GET['beer'];
     if($beer == 1 || $beer == 2 || $beer == 3 || $beer == 4 || $beer == 5 || $beer == 6){
-      $user = $developerID . '-' . mt_rand(5, 25);
+      $user = $developerID . '-' . mt_rand(5, 10).randomString();
       $data = array("developer" => $developerID, "user" => $user, "beer" => $beer);                                                                    
       $data_string = json_encode($data);           
       if(!isset($_COOKIE[$developerID])){
