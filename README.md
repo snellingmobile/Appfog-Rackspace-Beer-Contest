@@ -15,6 +15,15 @@ Instructions to deploy
 --------------
 Visit [Appfog's command line instructions](http://blog.appfog.com/getting-started-with-appfogs-command-line/) to deploy. 
 
+You only need to change the first few lines in the _index.php_ file.
+    <?php
+    /* Source by Sam Snelling (@snellingmobile) and licensed under the MIT License.
+     All photo's and copyrights belong to their respective companys. */
+    /* CHANGE THESE VALUES */
+    $developerID = 'samsnelling1234567890'; // Your Appfog developer ID
+    $googleAnalytics = "UA-38166115-1"; // If you want to track the website via Google Analytics!
+     /* NO MORE CHANING! */
+     ?>
 
 License
 --------------

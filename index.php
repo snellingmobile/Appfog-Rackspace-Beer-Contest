@@ -2,7 +2,7 @@
 /* Source by Sam Snelling (@snellingmobile) and licensed under the MIT License. All photo's and copyrights belong to their respective companys. */
 /* CHANGE THESE VALUES */
 $developerID = 'samsnelling1234567890'; // Your Appfog developer ID
-$googleAnalytics = "UA-38166115-1"; // If you want to track the website via Google Analytics! Use single quotes!
+$googleAnalytics = "UA-38166115-1"; // If you want to track the website via Google Analytics!
 /* NO MORE CHANING! */
 ?>
 
