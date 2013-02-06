@@ -16,8 +16,8 @@ Instructions to deploy
 Visit [Appfog's command line instructions](http://blog.appfog.com/getting-started-with-appfogs-command-line/) to deploy. 
 
 You only need to change the first few lines in the _index.php_ file.
-    $developerID = 'YOURDEVELOPERID';
-    $googleAnalytics = "UA-GOOGLEID-1"; 
+   ``` $developerID = 'YOURDEVELOPERID'; ```
+   ``` $googleAnalytics = "UA-GOOGLEID-1"; ```
 
 
 License
